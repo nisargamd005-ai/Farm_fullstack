@@ -1,0 +1,208 @@
+﻿docker-compose : time="2026-0
+3-28T21:13:06+05:30" 
+level=warning msg="C:\\Users\
+\Nisarga\\Farm_fullstack\\far
+m-stack-todo\\docker-compose.
+yml: the attribute `version` 
+is obsolete, it will be 
+ignored, please remove it to 
+avoid potential confusion"
+At line:1 char:1
++ docker-compose build > 
+build_log2.txt 2>&1; 
+Get-Content build_log2.tx ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (time="2  
+  026-03-2...tial confusio   
+ n":String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+ Image 
+farm-stack-todo-frontend 
+Building 
+ Image 
+farm-stack-todo-backend 
+Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.10kB done
+#1 DONE 0.0s
+
+#2 [frontend internal] load build definition from Dockerfile
+#2 transferring dockerfile: 311B 0.0s done
+#2 DONE 0.0s
+
+#3 [backend internal] load build definition from Dockerfile
+#3 transferring dockerfile: 232B 0.0s done
+#3 DONE 0.0s
+
+#4 [backend internal] load metadata for docker.io/library/python:3.11-slim
+#4 ...
+
+#5 [frontend internal] load metadata for docker.io/library/node:20-alpine
+#5 DONE 5.3s
+
+#6 [frontend internal] load metadata for docker.io/library/nginx:alpine
+#6 DONE 5.4s
+
+#4 [backend internal] load metadata for docker.io/library/python:3.11-slim
+#4 DONE 5.4s
+
+#7 [backend internal] load .dockerignore
+#7 transferring context: 2B done
+#7 DONE 0.0s
+
+#8 [backend internal] load build context
+#8 transferring context: 213B done
+#8 DONE 0.0s
+
+#9 [frontend internal] load .dockerignore
+#9 transferring context: 2B done
+#9 DONE 0.0s
+
+#10 [backend 1/5] FROM docker.io/library/python:3.11-slim@sha256:9358444059ed78e2975ada2c189f1c1a3144a5dab6f35bff8c981afb38946634
+#10 resolve docker.io/library/python:3.11-slim@sha256:9358444059ed78e2975ada2c189f1c1a3144a5dab6f35bff8c981afb38946634 0.0s done
+#10 DONE 0.0s
+
+#11 [backend 3/5] COPY requirements.txt ./
+#11 CACHED
+
+#12 [backend 4/5] RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
+#12 CACHED
+
+#13 [backend 2/5] WORKDIR /usr/src/app
+#13 CACHED
+
+#14 [backend 5/5] COPY src/ ./src/
+#14 CACHED
+
+#15 [backend] exporting to image
+#15 exporting layers done
+#15 exporting manifest sha256:47209239a186ffb7a223f655c82b84e92f0e6036f94dfe620155795b17742467 done
+#15 exporting config sha256:a75d5292b922c556b19e34432570f68b6dbf12c64e6d6d5751a05f9cb48397d0 0.0s done
+#15 exporting attestation manifest sha256:54b6f2d24d6043421b4544f2c18238631ff4aad9f0af00e9546ede64119815c6
+#15 ...
+
+#16 [frontend builder 1/6] FROM docker.io/library/node:20-alpine@sha256:f598378b5240225e6beab68fa9f356db1fb8efe55173e6d4d8153113bb8f333c
+#16 resolve docker.io/library/node:20-alpine@sha256:f598378b5240225e6beab68fa9f356db1fb8efe55173e6d4d8153113bb8f333c 0.1s done
+#16 DONE 0.1s
+
+#17 [frontend stage-1 1/3] FROM docker.io/library/nginx:alpine@sha256:e7257f1ef28ba17cf7c248cb8ccf6f0c6e0228ab9c315c152f9c203cd34cf6d1
+#17 resolve docker.io/library/nginx:alpine@sha256:e7257f1ef28ba17cf7c248cb8ccf6f0c6e0228ab9c315c152f9c203cd34cf6d1 0.1s done
+#17 DONE 0.1s
+
+#15 [backend] exporting to image
+#15 exporting attestation manifest sha256:54b6f2d24d6043421b4544f2c18238631ff4aad9f0af00e9546ede64119815c6 0.1s done
+#15 exporting manifest list sha256:7e534b491e3d2700e6dee16ea5f1c737d252f6767b353da402131d28227006b0 0.0s done
+#15 naming to docker.io/library/farm-stack-todo-backend:latest done
+#15 unpacking to docker.io/library/farm-stack-todo-backend:latest
+#15 ...
+
+#18 [frontend internal] load build context
+#18 transferring context: 344.87kB 0.7s done
+#18 DONE 0.7s
+
+#19 [frontend builder 2/6] WORKDIR /app
+#19 CACHED
+
+#20 [frontend builder 3/6] COPY package*.json ./
+#20 CACHED
+
+#21 [frontend builder 4/6] RUN npm install
+#21 CACHED
+
+#22 [frontend builder 5/6] COPY . .
+#22 CACHED
+
+#23 [frontend builder 6/6] RUN npm run build
+#23 0.566 
+#23 0.566 > frontend@0.0.0 build
+#23 0.566 > vite build
+#23 0.566 
+#23 0.815 file:///app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs:507
+#23 0.815 		if (loadErrors.length > 0) throw new Error("Cannot find native binding. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.", { cause: loadErrors.reduce((err, cur) => {
+#23 0.815 		                                 ^
+#23 0.815 
+#23 0.815 Error: Cannot find native binding. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+#23 0.815     at file:///app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs:507:36
+#23 0.815     at file:///app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs:9:48
+#23 0.815     ... 2 lines matching cause stack trace ...
+#23 0.815     at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+#23 0.815     at async CAC.<anonymous> (file:///app/node_modules/vite/dist/node/cli.js:764:28) {
+#23 0.815   [cause]: Error: Cannot find module '@rolldown/binding-linux-x64-musl'
+#23 0.815   Require stack:
+#23 0.815   - /app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs
+#23 0.815       at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+#23 0.815       ... 2 lines matching cause stack trace ...
+#23 0.815       at require (node:internal/modules/helpers:182:18)
+#23 0.815       at requireNative (file:///app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs:263:21)
+#23 0.815       at file:///app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs:475:18
+#23 0.815       at file:///app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs:9:48
+#23 0.815       at file:///app/node_modules/rolldown/dist/shared/parse-BGipdujE.mjs:39:46
+#23 0.815       at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+#23 0.815       at async ModuleLoader.import (node:internal/modules/esm/loader:606:24) {
+#23 0.815     code: 'MODULE_NOT_FOUND',
+#23 0.815     requireStack: [ '/app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs' ],
+#23 0.815     cause: Error: Cannot find module './rolldown-binding.linux-x64-musl.node'
+#23 0.815     Require stack:
+#23 0.815     - /app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs
+#23 0.815         at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+#23 0.815         at Module._load (node:internal/modules/cjs/loader:1038:27)
+#23 0.815         at Module.require (node:internal/modules/cjs/loader:1289:19)
+#23 0.815         at require (node:internal/modules/helpers:182:18)
+#23 0.815         at requireNative (file:///app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs:258:12)
+#23 0.815         at file:///app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs:475:18
+#23 0.815         at file:///app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs:9:48
+#23 0.815         at file:///app/node_modules/rolldown/dist/shared/parse-BGipdujE.mjs:39:46
+#23 0.815         at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+#23 0.815         at async ModuleLoader.import (node:internal/modules/esm/loader:606:24) {
+#23 0.815       code: 'MODULE_NOT_FOUND',
+#23 0.815       requireStack: [ '/app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs' ]
+#23 0.815     }
+#23 0.815   }
+#23 0.815 }
+#23 0.815 
+#23 0.815 Node.js v20.20.2
+#23 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+
+#15 [backend] exporting to image
+#15 unpacking to docker.io/library/farm-stack-todo-backend:latest 1.7s done
+#15 CANCELED
+------
+ > [frontend builder 6/6] RUN npm run build:
+0.815         at file:///app/node_modules/rolldown/dist/shared/parse-BGipdujE.mjs:39:46
+0.815         at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+0.815         at async ModuleLoader.import (node:internal/modules/esm/loader:606:24) {
+0.815       code: 'MODULE_NOT_FOUND',
+0.815       requireStack: [ '/app/node_modules/rolldown/dist/shared/binding-CkWPGrSM.mjs' ]
+0.815     }
+0.815   }
+0.815 }
+0.815 
+0.815 Node.js v20.20.2
+------
+Dockerfile:6
+
+--------------------
+
+   4 |     RUN npm install
+
+   5 |     COPY . .
+
+   6 | >>> RUN npm run build
+
+   7 |     
+
+   8 |     FROM nginx:alpine
+
+--------------------
+
+target frontend: failed to 
+solve: process "/bin/sh -c 
+npm run build" did not 
+complete successfully: exit 
+code: 1
+
